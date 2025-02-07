@@ -30,7 +30,7 @@ def print_report(word_count, char_list):
     for char_info in char_list:
         print(f"The '{char_info['char']}' character was found {char_info['num']} times")
     
-    print("--- End Report ---")
+    print("--- End report ---")
 
 
 def main():
