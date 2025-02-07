@@ -7,8 +7,18 @@ def main():
         character_set = set(file_contents.lower())
         # print(character_set)
         character_list = sorted(list(character_set))
-        print(character_list)
-        character_count = []
+        # print(character_list)
+        character_dict = {}
+        for character in file_contents.lower():
+            if character in character_dict:
+                character_dict[character] += 1
+            else:
+                character_dict[character] = 1
+        # print(character_dict)
+
+        alphabet = character_list[-26:]
+        print(alphabet)
+
 
 
 
